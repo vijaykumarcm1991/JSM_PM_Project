@@ -56,7 +56,13 @@ Available environment variables:
 - `MAX_ATTACHMENTS_PER_ROW`: Maximum attachments per row (default: `10`).
 - `ALLOW_CUSTOM_JIRA_HOST`: Set to `1` to allow domains other than `*.atlassian.net` (default: `0`).
 
-### 3. Run Development Server
+### 3. Run with Scripts (Windows / PowerShell)
+
+For quick one-click startup without opening a terminal:
+- Double-click **`start.bat`** (or run `powershell -ExecutionPolicy Bypass -File scripts/start.ps1`) to automatically install dependencies, build if necessary, launch the server in the background, and open your browser at `http://127.0.0.1:3000`.
+- Double-click **`stop.bat`** (or run `powershell -ExecutionPolicy Bypass -File scripts/stop.ps1`) to cleanly shut down any running server instance on port 3000.
+
+### 4. Run Development Server Manually
 
 ```bash
 npm run dev
@@ -64,7 +70,7 @@ npm run dev
 
 Open [http://127.0.0.1:3000](http://127.0.0.1:3000) in your browser.
 
-### 4. Run Production Build
+### 5. Run Production Build Manually
 
 ```bash
 npm run build
