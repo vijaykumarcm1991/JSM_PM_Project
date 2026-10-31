@@ -21,11 +21,7 @@ export default function SettingsPage() {
   } | null>(null);
   const [saveMessage, setSaveMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
 
-  useEffect(() => {
-    fetchSettings();
-  }, []);
-
-  async function fetchSettings() {
+  const fetchSettings = async () => {
     setLoading(true);
     try {
       const res = await fetch('/api/settings');
@@ -42,7 +38,11 @@ export default function SettingsPage() {
     } finally {
       setLoading(false);
     }
-  }
+  };
+
+  useEffect(() => {
+    fetchSettings();
+  }, []);
 
   async function handleSave(e: React.FormEvent) {
     e.preventDefault();

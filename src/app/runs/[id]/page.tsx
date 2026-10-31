@@ -70,6 +70,21 @@ export default function RunDetailsPage({ params }: { params: Promise<{ id: strin
   const [cancelling, setCancelling] = useState(false);
   const [expandedRow, setExpandedRow] = useState<number | null>(null);
 
+  const fetchRunData = async () => {
+    try {
+      const res = await fetch(`/api/runs/${runId}`);
+      if (res.ok) {
+        const data = await res.json();
+        setRun(data.run);
+        setRows(data.rows || []);
+      }
+    } catch (err) {
+      console.error('Failed to load run details', err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   useEffect(() => {
     fetchRunData();
   }, [runId]);
@@ -121,21 +136,6 @@ export default function RunDetailsPage({ params }: { params: Promise<{ id: strin
       eventSource.close();
     };
   }, [runId, run?.status]);
-
-  async function fetchRunData() {
-    try {
-      const res = await fetch(`/api/runs/${runId}`);
-      if (res.ok) {
-        const data = await res.json();
-        setRun(data.run);
-        setRows(data.rows || []);
-      }
-    } catch (err) {
-      console.error('Failed to load run details', err);
-    } finally {
-      setLoading(false);
-    }
-  }
 
   async function handleCancelRun() {
     if (!confirm('Are you sure you want to stop this run?')) return;

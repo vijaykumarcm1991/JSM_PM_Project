@@ -27,11 +27,7 @@ export default function RunsHistoryPage() {
   const [runs, setRuns] = useState<DbRun[]>([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    fetchRuns();
-  }, []);
-
-  async function fetchRuns() {
+  const fetchRuns = async () => {
     setLoading(true);
     try {
       const res = await fetch('/api/runs');
@@ -44,7 +40,11 @@ export default function RunsHistoryPage() {
     } finally {
       setLoading(false);
     }
-  }
+  };
+
+  useEffect(() => {
+    fetchRuns();
+  }, []);
 
   async function handleDeleteRun(runId: string) {
     if (!confirm('Are you sure you want to delete this run record?')) return;
