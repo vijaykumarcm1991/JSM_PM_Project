@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f4f5f7;
+  --foreground: #172b4d;
+  --card: #ffffff;
+  --card-foreground: #172b4d;
+  --primary: #0052cc;
+  --primary-foreground: #ffffff;
+  --secondary: #ebecf0;
+  --secondary-foreground: #172b4d;
+  --muted: #f4f5f7;
+  --muted-foreground: #6b778c;
+  --border: #dfe1e6;
+  --input: #dfe1e6;
+  --ring: #4c9aff;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  min-height: 100vh;
+}
