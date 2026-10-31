@@ -122,13 +122,43 @@ export async function getIssueTypes(projectKey: string): Promise<JiraIssueType[]
   const cached = getCached<JiraIssueType[]>(cacheKey);
   if (cached) return cached;
 
-  const res = await jiraFetch<{
-    values: JiraIssueType[];
-  }>({
-    path: `/rest/api/3/issue/createmeta/${encodeURIComponent(projectKey)}/issuetypes`,
-  });
+  let issueTypes: JiraIssueType[] = [];
 
-  const issueTypes = (res.values || []).filter((it) => !it.subtask);
+  try {
+    const res = await jiraFetch<{
+      values?: JiraIssueType[];
+    }>({
+      path: `/rest/api/3/issue/createmeta/${encodeURIComponent(projectKey)}/issuetypes`,
+    });
+    if (res?.values && res.values.length > 0) {
+      issueTypes = res.values.filter((it) => !it.subtask);
+    }
+  } catch {
+    // ignore
+  }
+
+  // Fallback to project details endpoint if createmeta returned empty
+  if (issueTypes.length === 0) {
+    try {
+      const proj = await jiraFetch<{
+        issueTypes?: Array<{ id: string; name: string; subtask: boolean; description?: string; iconUrl?: string }>;
+      }>({
+        path: `/rest/api/3/project/${encodeURIComponent(projectKey)}`,
+      });
+      if (proj?.issueTypes && proj.issueTypes.length > 0) {
+        issueTypes = proj.issueTypes.filter((it) => !it.subtask).map((it) => ({
+          id: it.id,
+          name: it.name,
+          description: it.description,
+          iconUrl: it.iconUrl,
+          subtask: it.subtask,
+        }));
+      }
+    } catch {
+      // ignore
+    }
+  }
+
   setCached(cacheKey, issueTypes);
   return issueTypes;
 }
@@ -145,49 +175,86 @@ export async function getCreatemetaFields(
   let startAt = 0;
   let isLast = false;
 
-  while (!isLast) {
-    const res = await jiraFetch<{
-      values: Array<{
-        fieldId: string;
-        name: string;
-        required: boolean;
-        hasDefaultValue?: boolean;
-        schema?: {
-          type: string;
-          custom?: string;
-          items?: string;
-        };
-        allowedValues?: any[];
-      }>;
-      isLast?: boolean;
-      total?: number;
-    }>({
-      path: `/rest/api/3/issue/createmeta/${encodeURIComponent(projectKey)}/issuetypes/${encodeURIComponent(issueTypeId)}?startAt=${startAt}&maxResults=50`,
-    });
-
-    const values = res.values || [];
-    for (const f of values) {
-      // Exclude project and issuetype from mapping since they are fixed by the run config
-      if (f.fieldId === 'project' || f.fieldId === 'issuetype') {
-        continue;
-      }
-      fields.push({
-        id: f.fieldId,
-        name: f.name,
-        required: f.required ?? false,
-        hasDefaultValue: f.hasDefaultValue ?? false,
-        schema: f.schema,
-        allowedValues: f.allowedValues,
+  try {
+    while (!isLast) {
+      const res = await jiraFetch<{
+        values: Array<{
+          fieldId: string;
+          name: string;
+          required: boolean;
+          hasDefaultValue?: boolean;
+          schema?: {
+            type: string;
+            custom?: string;
+            items?: string;
+          };
+          allowedValues?: any[];
+        }>;
+        isLast?: boolean;
+        total?: number;
+      }>({
+        path: `/rest/api/3/issue/createmeta/${encodeURIComponent(projectKey)}/issuetypes/${encodeURIComponent(issueTypeId)}?startAt=${startAt}&maxResults=50`,
       });
-    }
 
-    if (res.isLast !== undefined) {
-      isLast = res.isLast;
-    } else {
-      isLast = values.length < 50;
+      const values = res.values || [];
+      for (const f of values) {
+        if (f.fieldId === 'project' || f.fieldId === 'issuetype') {
+          continue;
+        }
+        fields.push({
+          id: f.fieldId,
+          name: f.name,
+          required: f.required ?? false,
+          hasDefaultValue: f.hasDefaultValue ?? false,
+          schema: f.schema,
+          allowedValues: f.allowedValues,
+        });
+      }
+
+      if (res.isLast !== undefined) {
+        isLast = res.isLast;
+      } else {
+        isLast = values.length < 50;
+      }
+      startAt += values.length;
+      if (values.length === 0) break;
     }
-    startAt += values.length;
-    if (values.length === 0) break;
+  } catch {
+    // ignore
+  }
+
+  // Fallback to legacy createmeta if primary endpoint returned empty
+  if (fields.length === 0) {
+    try {
+      const legacy = await jiraFetch<{
+        projects?: Array<{
+          issuetypes?: Array<{
+            id: string;
+            fields?: Record<string, any>;
+          }>;
+        }>;
+      }>({
+        path: `/rest/api/3/issue/createmeta?projectKeys=${encodeURIComponent(projectKey)}&issuetypeIds=${encodeURIComponent(issueTypeId)}&expand=projects.issuetypes.fields`,
+      });
+
+      const p = legacy.projects?.[0];
+      const it = p?.issuetypes?.find((item) => item.id === issueTypeId);
+      if (it?.fields) {
+        for (const [fId, fObj] of Object.entries<any>(it.fields)) {
+          if (fId === 'project' || fId === 'issuetype') continue;
+          fields.push({
+            id: fId,
+            name: fObj.name,
+            required: fObj.required ?? false,
+            hasDefaultValue: fObj.hasDefaultValue ?? false,
+            schema: fObj.schema,
+            allowedValues: fObj.allowedValues,
+          });
+        }
+      }
+    } catch {
+      // ignore
+    }
   }
 
   // Sort fields: required first, then standard, then custom

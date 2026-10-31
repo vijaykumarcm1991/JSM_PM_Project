@@ -111,11 +111,17 @@ export async function buildIssuePayload(
   config: MappingConfig,
   fieldMetas: JiraFieldMeta[]
 ): Promise<BuildPayloadResult> {
-  const fields: Record<string, any> = {
-    project: { key: config.projectKey },
-    issuetype: { id: config.issueTypeId },
-  };
+  const rowProjectKey = rowValues['Project'] || rowValues['project'] || config.projectKey;
   const errors: string[] = [];
+
+  if (!rowProjectKey || !String(rowProjectKey).trim()) {
+    errors.push('Project key is required for each row.');
+  }
+
+  const fields: Record<string, any> = {
+    project: { key: String(rowProjectKey || 'NDCCLOUD').trim() },
+    issuetype: { id: config.issueTypeId || '10037' },
+  };
 
   const fieldMetaMap = new Map<string, JiraFieldMeta>();
   for (const fm of fieldMetas) {

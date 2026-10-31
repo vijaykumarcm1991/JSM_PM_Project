@@ -1,0 +1,162 @@
+[
+  {
+    "key": "AIRIND",
+    "name": "Airtel-India"
+  },
+  {
+    "key": "AM",
+    "name": "America Movil"
+  },
+  {
+    "key": "ATLBUR",
+    "name": "Airtel-BurkinaFaso"
+  },
+  {
+    "key": "BANBD",
+    "name": "Banglalink-BD"
+  },
+  {
+    "key": "BSNLIND",
+    "name": "BSNL-INDIA"
+  },
+  {
+    "key": "DAISP",
+    "name": "Daius-Spain"
+  },
+  {
+    "key": "DIASLRBT",
+    "name": "Dialog-SL-RBT"
+  },
+  {
+    "key": "DIGH",
+    "name": "Digicel-Haiti"
+  },
+  {
+    "key": "DIGJAM",
+    "name": "Digicel-Jamaica"
+  },
+  {
+    "key": "DUDB",
+    "name": "DU-Dubai"
+  },
+  {
+    "key": "GRPBD",
+    "name": "GrameenPhone-BD"
+  },
+  {
+    "key": "IDEAIND",
+    "name": "Idea-India"
+  },
+  {
+    "key": "LEBSA",
+    "name": "Lebara-SA"
+  },
+  {
+    "key": "MTNAF",
+    "name": "MTN-Afghanistan"
+  },
+  {
+    "key": "NDCCLOUD",
+    "name": "NDC-Cloud"
+  },
+  {
+    "key": "NDCPRE",
+    "name": "NDC-OnPrem"
+  },
+  {
+    "key": "OMAN",
+    "name": "Omantel-Oman"
+  },
+  {
+    "key": "OMCC",
+    "name": "OM-CUSTOMERCARE"
+  },
+  {
+    "key": "OMSUPPORT",
+    "name": "OM-SUPPORT"
+  },
+  {
+    "key": "ONMOPLUS",
+    "name": "onmoplus"
+  },
+  {
+    "key": "ORSP",
+    "name": "Orange-Spain"
+  },
+  {
+    "key": "ROBRBT",
+    "name": "Robi-BD-RBT"
+  },
+  {
+    "key": "SAFET",
+    "name": "Safaricom-Ethiopia"
+  },
+  {
+    "key": "STCBAH",
+    "name": "STC-Bahrain"
+  },
+  {
+    "key": "STG01",
+    "name": "staging01"
+  },
+  {
+    "key": "TEFSPNRBT",
+    "name": "Telefonica-Spain-RBT"
+  },
+  {
+    "key": "TELCR",
+    "name": "Telefonica-CostaRica"
+  },
+  {
+    "key": "TELSPACVAS",
+    "name": "Telefonica-Spain-CVAS"
+  },
+  {
+    "key": "UMOMAL",
+    "name": "UMobile-Malaysia"
+  },
+  {
+    "key": "UNIANGRBT",
+    "name": "Unitel-Angola-RBT"
+  },
+  {
+    "key": "VODAEGY",
+    "name": "Vodafone-Egypt"
+  },
+  {
+    "key": "VODAIND",
+    "name": "Vodafone-India"
+  },
+  {
+    "key": "VODASP",
+    "name": "Vodafone-Spain"
+  },
+  {
+    "key": "VODDRC",
+    "name": "Vodacom-DRC"
+  },
+  {
+    "key": "VODGR",
+    "name": "Vodafone-Greece"
+  },
+  {
+    "key": "VODMOZ",
+    "name": "Vodacom-Mozambique"
+  },
+  {
+    "key": "VODQR",
+    "name": "Vodafone-Qatar"
+  },
+  {
+    "key": "VODSA",
+    "name": "Vodacom-SouthAfrica"
+  },
+  {
+    "key": "VODTAN",
+    "name": "Vodacom-Tanzania"
+  },
+  {
+    "key": "ZAIBAH",
+    "name": "Zain-Bahrain"
+  }
+]

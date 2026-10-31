@@ -74,6 +74,16 @@ export async function POST(req: NextRequest) {
 
     const skipSet = new Set<number>(skippedRowIndices.map(Number));
 
+    const projectKeys = Array.from(
+      new Set(
+        sortedRowIndices
+          .map((r) => rows[r]['Project'] || rows[r]['project'] || config.projectKey)
+          .filter(Boolean)
+      )
+    );
+    const resolvedProjectKey =
+      projectKeys.length === 1 ? projectKeys[0] : projectKeys.length > 1 ? `Multi (${projectKeys.length})` : config.projectKey;
+
     // Create run record
     db.prepare(`
       INSERT INTO runs (
@@ -83,10 +93,10 @@ export async function POST(req: NextRequest) {
       ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, 0, 0, 0, 0, 'running', ?)
     `).run(
       runId,
-      config.projectKey,
-      projectName || config.projectKey,
-      config.issueTypeId,
-      issueTypeName || config.issueTypeId,
+      resolvedProjectKey,
+      projectName || (projectKeys.length > 1 ? projectKeys.join(', ') : resolvedProjectKey),
+      config.issueTypeId || '10037',
+      issueTypeName || 'Problem',
       upload.filename,
       upload.sheet_name,
       total,

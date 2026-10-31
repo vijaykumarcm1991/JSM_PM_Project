@@ -1,0 +1,3247 @@
+{
+  "issuetype": {
+    "required": true,
+    "schema": {
+      "type": "issuetype",
+      "system": "issuetype"
+    },
+    "name": "Issue Type",
+    "key": "issuetype",
+    "hasDefaultValue": false,
+    "operations": [],
+    "allowedValues": [
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/issuetype/10037",
+        "id": "10037",
+        "description": "Track underlying causes of incidents. Created by Jira Service Management. (Migrated on 8 Apr 2026 13:02 UTC)",
+        "iconUrl": "https://onmobile-sd.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10300?size=medium",
+        "name": "Problem",
+        "subtask": false,
+        "avatarId": 10300,
+        "hierarchyLevel": 0
+      }
+    ]
+  },
+  "parent": {
+    "required": false,
+    "schema": {
+      "type": "issuelink",
+      "system": "parent"
+    },
+    "name": "Parent",
+    "key": "parent",
+    "hasDefaultValue": false,
+    "operations": [
+      "set"
+    ]
+  },
+  "customfield_10091": {
+    "required": false,
+    "schema": {
+      "type": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+      "customId": 10091
+    },
+    "name": "Country",
+    "key": "customfield_10091",
+    "hasDefaultValue": false,
+    "operations": [
+      "set"
+    ],
+    "allowedValues": [
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10053",
+        "value": "Afghanistan",
+        "id": "10053"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10054",
+        "value": "Angola",
+        "id": "10054"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10055",
+        "value": "Argentina",
+        "id": "10055"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10056",
+        "value": "Bahrain",
+        "id": "10056"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10057",
+        "value": "Bangladesh",
+        "id": "10057"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10058",
+        "value": "BRAZIL",
+        "id": "10058"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10059",
+        "value": "Burkina Faso",
+        "id": "10059"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10060",
+        "value": "Chile",
+        "id": "10060"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10061",
+        "value": "Colombia",
+        "id": "10061"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10062",
+        "value": "Costa Rica",
+        "id": "10062"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10063",
+        "value": "Cyprus",
+        "id": "10063"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10064",
+        "value": "Czechoslovakia",
+        "id": "10064"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10065",
+        "value": "DRC",
+        "id": "10065"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10066",
+        "value": "Dubai",
+        "id": "10066"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10067",
+        "value": "Ecuador",
+        "id": "10067"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10068",
+        "value": "Egypt",
+        "id": "10068"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10069",
+        "value": "El Salvador",
+        "id": "10069"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10070",
+        "value": "Geutemala",
+        "id": "10070"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10071",
+        "value": "Ghana",
+        "id": "10071"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10072",
+        "value": "Greece",
+        "id": "10072"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10073",
+        "value": "Guatemala",
+        "id": "10073"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10074",
+        "value": "Guinea Bissau",
+        "id": "10074"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10075",
+        "value": "Guinea Republic",
+        "id": "10075"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10076",
+        "value": "Haiti",
+        "id": "10076"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10077",
+        "value": "India",
+        "id": "10077"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10078",
+        "value": "Indonesia",
+        "id": "10078"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10079",
+        "value": "Italy",
+        "id": "10079"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10080",
+        "value": "Jamaica",
+        "id": "10080"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10081",
+        "value": "kenya",
+        "id": "10081"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10082",
+        "value": "LATAM",
+        "id": "10082"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10083",
+        "value": "LATAM-1",
+        "id": "10083"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10084",
+        "value": "LATAM-2",
+        "id": "10084"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10085",
+        "value": "Liberia",
+        "id": "10085"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10086",
+        "value": "Madagascar",
+        "id": "10086"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10087",
+        "value": "Malawi",
+        "id": "10087"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10088",
+        "value": "Malaysia",
+        "id": "10088"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10089",
+        "value": "Mexico",
+        "id": "10089"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10090",
+        "value": "Miami",
+        "id": "10090"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10091",
+        "value": "Mozambique",
+        "id": "10091"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10092",
+        "value": "Nicaragua",
+        "id": "10092"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10093",
+        "value": "Niger",
+        "id": "10093"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10094",
+        "value": "Nigeria",
+        "id": "10094"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10095",
+        "value": "Oman",
+        "id": "10095"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10096",
+        "value": "Panama",
+        "id": "10096"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10097",
+        "value": "Peru",
+        "id": "10097"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10098",
+        "value": "QATAR",
+        "id": "10098"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10099",
+        "value": "Romania",
+        "id": "10099"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10100",
+        "value": "Rwanda",
+        "id": "10100"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10101",
+        "value": "Saudi Arabia",
+        "id": "10101"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10102",
+        "value": "Senegal",
+        "id": "10102"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10103",
+        "value": "Sierra Leone",
+        "id": "10103"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10104",
+        "value": "South Africa",
+        "id": "10104"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10105",
+        "value": "South Sudan",
+        "id": "10105"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10106",
+        "value": "Spain",
+        "id": "10106"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10107",
+        "value": "Sri Lanka",
+        "id": "10107"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10108",
+        "value": "Swaziland",
+        "id": "10108"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10109",
+        "value": "Tanzania",
+        "id": "10109"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10110",
+        "value": "Turkey",
+        "id": "10110"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10111",
+        "value": "Uganda",
+        "id": "10111"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10112",
+        "value": "UK",
+        "id": "10112"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10113",
+        "value": "United States",
+        "id": "10113"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10114",
+        "value": "Uruguay",
+        "id": "10114"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10115",
+        "value": "Venezuela",
+        "id": "10115"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10116",
+        "value": "Zambia",
+        "id": "10116"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10117",
+        "value": "ETHIOPIA",
+        "id": "10117"
+      }
+    ]
+  },
+  "customfield_10094": {
+    "required": false,
+    "schema": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+      "customId": 10094
+    },
+    "name": "Affected_CI",
+    "key": "customfield_10094",
+    "hasDefaultValue": false,
+    "operations": [
+      "set"
+    ]
+  },
+  "customfield_10095": {
+    "required": false,
+    "schema": {
+      "type": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+      "customId": 10095
+    },
+    "name": "Source",
+    "key": "customfield_10095",
+    "hasDefaultValue": false,
+    "operations": [
+      "set"
+    ],
+    "allowedValues": [
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10274",
+        "value": "NMS",
+        "id": "10274"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10275",
+        "value": "CRM",
+        "id": "10275"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10277",
+        "value": "EMAIL",
+        "id": "10277"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10282",
+        "value": "Crowdstrike",
+        "id": "10282"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10283",
+        "value": "CCM",
+        "id": "10283"
+      }
+    ]
+  },
+  "customfield_10096": {
+    "required": false,
+    "schema": {
+      "type": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+      "customId": 10096
+    },
+    "name": "Issue_Category",
+    "key": "customfield_10096",
+    "hasDefaultValue": false,
+    "operations": [
+      "set"
+    ],
+    "allowedValues": [
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10555",
+        "value": "AF Application Exception",
+        "id": "10555"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10556",
+        "value": "AF Application Timeout",
+        "id": "10556"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10557",
+        "value": "AF Appserver",
+        "id": "10557"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10558",
+        "value": "AF CPU",
+        "id": "10558"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10559",
+        "value": "AF DB Issue",
+        "id": "10559"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10560",
+        "value": "AF Invalid Entries",
+        "id": "10560"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10561",
+        "value": "AF Invocation Not found",
+        "id": "10561"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10562",
+        "value": "AF Memcache Issue",
+        "id": "10562"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10563",
+        "value": "AF Memory",
+        "id": "10563"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10564",
+        "value": "AF Process Out of Memory",
+        "id": "10564"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10565",
+        "value": "AF Query Failure",
+        "id": "10565"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10566",
+        "value": "AF Time sync Issue",
+        "id": "10566"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10567",
+        "value": "Amoeba Content Delivery Failure",
+        "id": "10567"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10568",
+        "value": "Amoeba No App Info",
+        "id": "10568"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10569",
+        "value": "Amoeba No Mmcontextdata",
+        "id": "10569"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10570",
+        "value": "Amoeba Remote URL",
+        "id": "10570"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10571",
+        "value": "Amoeba Response Issue",
+        "id": "10571"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10572",
+        "value": "Amoeba SMS failure",
+        "id": "10572"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10573",
+        "value": "Amoeba SP",
+        "id": "10573"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10574",
+        "value": "Amoeba Subscription Failure",
+        "id": "10574"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10575",
+        "value": "Amoeba XML Issue",
+        "id": "10575"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10576",
+        "value": "Amoeba Zero Content",
+        "id": "10576"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10577",
+        "value": "API PERFORMANCE ISSUE",
+        "id": "10577"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10578",
+        "value": "ASR",
+        "id": "10578"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10579",
+        "value": "Atlantis Content Failure",
+        "id": "10579"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10580",
+        "value": "Atlantis Job Error",
+        "id": "10580"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10581",
+        "value": "Audit",
+        "id": "10581"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10582",
+        "value": "BATTERY ISSUE",
+        "id": "10582"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10583",
+        "value": "Callback Failure",
+        "id": "10583"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10584",
+        "value": "CDR Unchanged Issue",
+        "id": "10584"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10585",
+        "value": "Certificate Expiry",
+        "id": "10585"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10586",
+        "value": "CI INFORMATION CHANGE",
+        "id": "10586"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10587",
+        "value": "CIC BLOCKED",
+        "id": "10587"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10588",
+        "value": "CLUSTER RESOURCE DOWN",
+        "id": "10588"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10589",
+        "value": "CMDB ISSUE",
+        "id": "10589"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10590",
+        "value": "Configuration Backup Issue",
+        "id": "10590"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10591",
+        "value": "Connectivity Issue",
+        "id": "10591"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10592",
+        "value": "Content Issue",
+        "id": "10592"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10593",
+        "value": "Contest Active MQ Issue",
+        "id": "10593"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10594",
+        "value": "Contest Coupon Issue",
+        "id": "10594"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10595",
+        "value": "Contest Daemon Issue",
+        "id": "10595"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10596",
+        "value": "Contest DB Connection Issue",
+        "id": "10596"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10597",
+        "value": "Contest DB Issue",
+        "id": "10597"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10598",
+        "value": "Contest URL Issue",
+        "id": "10598"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10599",
+        "value": "CPU ERROR",
+        "id": "10599"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10600",
+        "value": "CPU UTILIZATION",
+        "id": "10600"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10601",
+        "value": "Cricket OPServer Issue",
+        "id": "10601"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10602",
+        "value": "DB Backup Issue",
+        "id": "10602"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10603",
+        "value": "DB Connection Failed",
+        "id": "10603"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10604",
+        "value": "DB INSTANCE DOWN",
+        "id": "10604"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10605",
+        "value": "DB Query Failure",
+        "id": "10605"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10606",
+        "value": "DB REPLICATION ISSUE",
+        "id": "10606"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10607",
+        "value": "DEVICE DOWN",
+        "id": "10607"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10608",
+        "value": "DISK CONTROLLER DOWN",
+        "id": "10608"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10609",
+        "value": "Disk Enclosure DOWN",
+        "id": "10609"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10610",
+        "value": "DISK I/O Overload",
+        "id": "10610"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10611",
+        "value": "Disk Issue",
+        "id": "10611"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10612",
+        "value": "DISK SPACE",
+        "id": "10612"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10613",
+        "value": "Disk Volume Issue",
+        "id": "10613"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10614",
+        "value": "Display Server Down",
+        "id": "10614"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10615",
+        "value": "DOMAIN CONTROLLER ISSUE",
+        "id": "10615"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10616",
+        "value": "E1 DOWN",
+        "id": "10616"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10617",
+        "value": "ENR",
+        "id": "10617"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10618",
+        "value": "ETL Process Issue",
+        "id": "10618"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10619",
+        "value": "Express Catalog Issue",
+        "id": "10619"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10620",
+        "value": "Express Storefront Issue",
+        "id": "10620"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10621",
+        "value": "Fan Issue",
+        "id": "10621"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10622",
+        "value": "FAN UNIT DOWN",
+        "id": "10622"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10623",
+        "value": "File Not Found",
+        "id": "10623"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10624",
+        "value": "Filesystem Issue",
+        "id": "10624"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10625",
+        "value": "Footbal Sync Issue",
+        "id": "10625"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10626",
+        "value": "Football Cache Issue",
+        "id": "10626"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10627",
+        "value": "Football Config Issue",
+        "id": "10627"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10628",
+        "value": "Football Data Format issue",
+        "id": "10628"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10629",
+        "value": "Football DB Connection Issue",
+        "id": "10629"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10630",
+        "value": "Football Event Issue",
+        "id": "10630"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10631",
+        "value": "Football Response Parsing Issue",
+        "id": "10631"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10632",
+        "value": "Football Templates Issue",
+        "id": "10632"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10633",
+        "value": "Football URL Issue",
+        "id": "10633"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10634",
+        "value": "Football Webservice Issue",
+        "id": "10634"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10635",
+        "value": "Fortigate Firewall Issue",
+        "id": "10635"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10636",
+        "value": "FTP SERVICE DOWN",
+        "id": "10636"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10637",
+        "value": "Galore Active MQ Issue",
+        "id": "10637"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10638",
+        "value": "Galore Coupon Issue",
+        "id": "10638"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10639",
+        "value": "Galore DB Issue",
+        "id": "10639"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10640",
+        "value": "Galore URL Issue",
+        "id": "10640"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10641",
+        "value": "GKE Service Down",
+        "id": "10641"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10642",
+        "value": "GRIFF Billing Issue",
+        "id": "10642"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10643",
+        "value": "Griff Service Issue",
+        "id": "10643"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10644",
+        "value": "HARDWARE GLOBAL ISSUE",
+        "id": "10644"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10645",
+        "value": "HDD ISSUE",
+        "id": "10645"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10646",
+        "value": "High Link Utilization",
+        "id": "10646"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10647",
+        "value": "HIGH MEMORY UTILIZATION",
+        "id": "10647"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10648",
+        "value": "HIGH TEMPERATURE",
+        "id": "10648"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10649",
+        "value": "HLR Session Error",
+        "id": "10649"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10650",
+        "value": "HMA Down",
+        "id": "10650"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10651",
+        "value": "HOSTNAME CHANGE",
+        "id": "10651"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10652",
+        "value": "HP CHASSIS ISSUE",
+        "id": "10652"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10653",
+        "value": "HTTP SERVICE DOWN",
+        "id": "10653"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10654",
+        "value": "HTTPD PROCESS DOWN",
+        "id": "10654"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10655",
+        "value": "HTTPS SERVICE DOWN",
+        "id": "10655"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10656",
+        "value": "Hubble process Issue",
+        "id": "10656"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10657",
+        "value": "IIS SERVICE ISSUE",
+        "id": "10657"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10658",
+        "value": "IMAP SERVICE DOWN",
+        "id": "10658"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10659",
+        "value": "INODES UTILIZATION",
+        "id": "10659"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10660",
+        "value": "Java Agent Down",
+        "id": "10660"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10661",
+        "value": "LDAP SERVICE DOWN",
+        "id": "10661"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10662",
+        "value": "Link Interface Down",
+        "id": "10662"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10663",
+        "value": "LOG UPDATE ISSUE",
+        "id": "10663"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10664",
+        "value": "Malware Issue",
+        "id": "10664"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10665",
+        "value": "MAS Response Issue",
+        "id": "10665"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10666",
+        "value": "MAS Service Paramater Issue",
+        "id": "10666"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10667",
+        "value": "MAS XML Issue",
+        "id": "10667"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10668",
+        "value": "MAS Zero Content Issue",
+        "id": "10668"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10669",
+        "value": "MAXDB DOWN",
+        "id": "10669"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10670",
+        "value": "MCA Monitoring Issue",
+        "id": "10670"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10671",
+        "value": "MCA SMS Processing Issue",
+        "id": "10671"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10672",
+        "value": "MCA SMSC Connectivity Issue",
+        "id": "10672"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10673",
+        "value": "MEMORY ERROR",
+        "id": "10673"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10674",
+        "value": "MEMORY UTILIZATION",
+        "id": "10674"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10675",
+        "value": "MGC Agent Issue",
+        "id": "10675"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10676",
+        "value": "MGC Issue",
+        "id": "10676"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10677",
+        "value": "MPAC Process Issue",
+        "id": "10677"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10678",
+        "value": "Msearch Config Issue",
+        "id": "10678"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10679",
+        "value": "Msearch DB Connection issue",
+        "id": "10679"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10680",
+        "value": "Msearch Logging Issue",
+        "id": "10680"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10681",
+        "value": "Msearch URL Hit Failure",
+        "id": "10681"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10682",
+        "value": "MSSQL SERVICE ISSUE",
+        "id": "10682"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10683",
+        "value": "MULE PROCESS DOWN",
+        "id": "10683"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10684",
+        "value": "MySQL",
+        "id": "10684"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10685",
+        "value": "MYSQL DOWN",
+        "id": "10685"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10686",
+        "value": "Network",
+        "id": "10686"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10687",
+        "value": "Network Device Component Issue",
+        "id": "10687"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10688",
+        "value": "NNTP SERVICE DOWN",
+        "id": "10688"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10689",
+        "value": "NOC Tool Issue",
+        "id": "10689"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10690",
+        "value": "NODE RESTART",
+        "id": "10690"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10691",
+        "value": "Not Supported",
+        "id": "10691"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10692",
+        "value": "Nova Content Sync Issue",
+        "id": "10692"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10693",
+        "value": "NOVA DB Query Issue",
+        "id": "10693"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10694",
+        "value": "Nova No CSV Issue",
+        "id": "10694"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10695",
+        "value": "novaCorruptFileAlarm",
+        "id": "10695"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10696",
+        "value": "novaMissingFileAlarm",
+        "id": "10696"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10697",
+        "value": "novaProcessFailureAlarm",
+        "id": "10697"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10698",
+        "value": "NTP ISSUE",
+        "id": "10698"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10699",
+        "value": "NTP SERVICE DOWN",
+        "id": "10699"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10700",
+        "value": "NVRAM Battery Issue",
+        "id": "10700"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10701",
+        "value": "OBD Daemon Failure",
+        "id": "10701"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10702",
+        "value": "OBD DB Failure",
+        "id": "10702"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10703",
+        "value": "OBD Dialog Failure",
+        "id": "10703"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10704",
+        "value": "OBD FTP Failure",
+        "id": "10704"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10705",
+        "value": "OBD Health Check Issue",
+        "id": "10705"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10706",
+        "value": "OBD Initialisation Failure",
+        "id": "10706"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10707",
+        "value": "OBD Path Issue",
+        "id": "10707"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10708",
+        "value": "OBD Post call Failure",
+        "id": "10708"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10709",
+        "value": "OBD Processing Failure",
+        "id": "10709"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10710",
+        "value": "OBD StartUp Issue",
+        "id": "10710"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10711",
+        "value": "OBD URL Failure",
+        "id": "10711"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10712",
+        "value": "OBD VoicePush Failure",
+        "id": "10712"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10713",
+        "value": "ORACLE PROCESS DOWN",
+        "id": "10713"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10714",
+        "value": "OSP Capacity is Full",
+        "id": "10714"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10715",
+        "value": "OSP E1 Down",
+        "id": "10715"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10716",
+        "value": "OSP Internet Issue",
+        "id": "10716"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10717",
+        "value": "OSP LAN Down",
+        "id": "10717"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10718",
+        "value": "OSP MCA Failure",
+        "id": "10718"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10719",
+        "value": "OSP NMS Board Down",
+        "id": "10719"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10720",
+        "value": "OSP Number Out of Range",
+        "id": "10720"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10721",
+        "value": "OSP Process Failure",
+        "id": "10721"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10722",
+        "value": "OSP Signalling link Down",
+        "id": "10722"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10723",
+        "value": "OSP SMSC Issue",
+        "id": "10723"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10724",
+        "value": "OSP Streaming Issue",
+        "id": "10724"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10725",
+        "value": "OZONE Cluster",
+        "id": "10725"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10726",
+        "value": "OZONE CPU UTILIZATION",
+        "id": "10726"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10727",
+        "value": "OZONE DISK SPACE",
+        "id": "10727"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10728",
+        "value": "OZONE MEMORY ERROR",
+        "id": "10728"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10729",
+        "value": "OZONE Process Down",
+        "id": "10729"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10730",
+        "value": "OZONE Server Down",
+        "id": "10730"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10731",
+        "value": "OZONE Site Maintainence",
+        "id": "10731"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10732",
+        "value": "Pack Service issue",
+        "id": "10732"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10733",
+        "value": "PATH ACCESS ISSUE",
+        "id": "10733"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10734",
+        "value": "Performance Issue",
+        "id": "10734"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10735",
+        "value": "Persist File Issue",
+        "id": "10735"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10736",
+        "value": "Port Not Listening",
+        "id": "10736"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10737",
+        "value": "POSTGRESQL DOWN",
+        "id": "10737"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10738",
+        "value": "POSTGRESQL PROCESS DOWN",
+        "id": "10738"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10739",
+        "value": "POWER SUPPLY DOWN",
+        "id": "10739"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10740",
+        "value": "Power Supply Issue",
+        "id": "10740"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10741",
+        "value": "PRISM Billing Issue",
+        "id": "10741"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10742",
+        "value": "PRISM ERROR COUNT",
+        "id": "10742"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10743",
+        "value": "PRISM FTP",
+        "id": "10743"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10744",
+        "value": "PRISM PROCESS DOWN",
+        "id": "10744"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10745",
+        "value": "PRISM QUEUE",
+        "id": "10745"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10746",
+        "value": "PRISM RESPTIME",
+        "id": "10746"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10747",
+        "value": "PRISM TPS",
+        "id": "10747"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10748",
+        "value": "Process Down",
+        "id": "10748"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10749",
+        "value": "PROCESSOR ISSUE",
+        "id": "10749"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10750",
+        "value": "QUEUE COUNT",
+        "id": "10750"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10751",
+        "value": "RBT COPY",
+        "id": "10751"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10752",
+        "value": "RBT DB Queue",
+        "id": "10752"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10753",
+        "value": "RBT Player Daemon",
+        "id": "10753"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10754",
+        "value": "RBT RecordMyOwn Queue",
+        "id": "10754"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10755",
+        "value": "RBT Remote URL",
+        "id": "10755"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10756",
+        "value": "RBT SM Daemon",
+        "id": "10756"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10757",
+        "value": "RBT SM Queue",
+        "id": "10757"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10758",
+        "value": "RBT TP Caller Tune Error",
+        "id": "10758"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10759",
+        "value": "RBT TP Charging",
+        "id": "10759"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10760",
+        "value": "RBT TP Connectivity",
+        "id": "10760"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10761",
+        "value": "RBT TP Hit Failed",
+        "id": "10761"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10762",
+        "value": "RBT TP Java Error",
+        "id": "10762"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10763",
+        "value": "RBT TP Message Failed",
+        "id": "10763"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10764",
+        "value": "RBT TP Selections Error",
+        "id": "10764"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10765",
+        "value": "Realtime Report Issue",
+        "id": "10765"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10766",
+        "value": "Recharge Issue",
+        "id": "10766"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10767",
+        "value": "Reporting File Issue",
+        "id": "10767"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10768",
+        "value": "Response Issue",
+        "id": "10768"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10769",
+        "value": "Response Time Delay",
+        "id": "10769"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10770",
+        "value": "SERVER CHASSIS ISSUE",
+        "id": "10770"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10771",
+        "value": "SIU Box Issue",
+        "id": "10771"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10772",
+        "value": "SM Bulk Daemon",
+        "id": "10772"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10773",
+        "value": "SM Bulk Database Connection",
+        "id": "10773"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10774",
+        "value": "SM Daemon",
+        "id": "10774"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10775",
+        "value": "SM Database Connection",
+        "id": "10775"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10776",
+        "value": "SM High Latency",
+        "id": "10776"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10777",
+        "value": "SM Memcache",
+        "id": "10777"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10778",
+        "value": "SM Remote URL",
+        "id": "10778"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10779",
+        "value": "SM RESP Error",
+        "id": "10779"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10780",
+        "value": "SM SMS Daemon",
+        "id": "10780"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10781",
+        "value": "SM SMS Database Connection",
+        "id": "10781"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10782",
+        "value": "SM Tomcat Daemon",
+        "id": "10782"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10783",
+        "value": "SM Tomcat Database Connection",
+        "id": "10783"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10784",
+        "value": "SMS CDR Error",
+        "id": "10784"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10785",
+        "value": "SMS Log Issue",
+        "id": "10785"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10786",
+        "value": "SMS QUEUE",
+        "id": "10786"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10787",
+        "value": "SMTP SERVICE DOWN",
+        "id": "10787"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10788",
+        "value": "SNMP SERVICE ISSUE",
+        "id": "10788"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10789",
+        "value": "SNMPD PROCESS DOWN",
+        "id": "10789"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10790",
+        "value": "Spider Transfer failed",
+        "id": "10790"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10791",
+        "value": "SS7 Link Down",
+        "id": "10791"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10792",
+        "value": "STORAGE CLUSTER ISSUE",
+        "id": "10792"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10793",
+        "value": "STORAGE CONFIGURATION ISSUE",
+        "id": "10793"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10794",
+        "value": "STORAGE CONTROLLER ISSUE",
+        "id": "10794"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10795",
+        "value": "Storage Device Component Issue",
+        "id": "10795"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10796",
+        "value": "Storage Issue",
+        "id": "10796"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10797",
+        "value": "SWAP MEMORY UTILIZATION",
+        "id": "10797"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10798",
+        "value": "SYNCFILE FAILURE",
+        "id": "10798"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10799",
+        "value": "Temperature Issue",
+        "id": "10799"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10800",
+        "value": "Test",
+        "id": "10800"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10801",
+        "value": "Testing",
+        "id": "10801"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10802",
+        "value": "Thread Issue",
+        "id": "10802"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10803",
+        "value": "Timeout Error",
+        "id": "10803"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10804",
+        "value": "TOMCAT PROCESS DOWN",
+        "id": "10804"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10805",
+        "value": "TOMCAT RESPONSE ISSUE",
+        "id": "10805"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10806",
+        "value": "UMP Appserver Status",
+        "id": "10806"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10807",
+        "value": "UMP Content",
+        "id": "10807"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10808",
+        "value": "UMP Device Mgr Conn",
+        "id": "10808"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10809",
+        "value": "UMP Health Trap",
+        "id": "10809"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10810",
+        "value": "UMP Message Response",
+        "id": "10810"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10811",
+        "value": "UMP MQ Issue",
+        "id": "10811"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10812",
+        "value": "UMP SM Trap",
+        "id": "10812"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10813",
+        "value": "UMP SMSC connectivity",
+        "id": "10813"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10814",
+        "value": "UMP SMSC Error",
+        "id": "10814"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10815",
+        "value": "UMP Thirdparty Error",
+        "id": "10815"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10816",
+        "value": "Unauthorized Login",
+        "id": "10816"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10817",
+        "value": "UNKNOWN",
+        "id": "10817"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10818",
+        "value": "Update Failure",
+        "id": "10818"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10819",
+        "value": "URL DOWN",
+        "id": "10819"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10820",
+        "value": "VF CG Failures",
+        "id": "10820"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10821",
+        "value": "Voice Cricket Controller Issue",
+        "id": "10821"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10822",
+        "value": "Voice Cricket VUI Issue",
+        "id": "10822"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10823",
+        "value": "Voldemort service",
+        "id": "10823"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10824",
+        "value": "ZABBIX AGENT UNREACHABLE",
+        "id": "10824"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10825",
+        "value": "PRISM_HIT_FAILED",
+        "id": "10825"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10826",
+        "value": "RBT PROCESS DOWN",
+        "id": "10826"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10827",
+        "value": "ONMOPAY ISSUE",
+        "id": "10827"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10828",
+        "value": "Chronyd service down",
+        "id": "10828"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10829",
+        "value": "DB Down",
+        "id": "10829"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10830",
+        "value": "Health Check Issue",
+        "id": "10830"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10831",
+        "value": "RBT Bundle Queue",
+        "id": "10831"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10832",
+        "value": "Prefix File Issue",
+        "id": "10832"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10833",
+        "value": "CUSTOMER CARE ISSUE",
+        "id": "10833"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10834",
+        "value": "Galera Issue",
+        "id": "10834"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10835",
+        "value": "Data Location Mismatch",
+        "id": "10835"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10916",
+        "value": "Telcdr Not Updating",
+        "id": "10916"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10919",
+        "value": "GPU Hardware Issue",
+        "id": "10919"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10920",
+        "value": "Docker Service Issue",
+        "id": "10920"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10922",
+        "value": "EON Application Issue",
+        "id": "10922"
+      }
+    ]
+  },
+  "customfield_10151": {
+    "required": false,
+    "schema": {
+      "type": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+      "customId": 10151
+    },
+    "name": "Impact (migrated)",
+    "key": "customfield_10151",
+    "hasDefaultValue": false,
+    "operations": [
+      "set"
+    ],
+    "allowedValues": [
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10840",
+        "value": "Extensive / Widespread",
+        "id": "10840"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10841",
+        "value": "Significant / Large",
+        "id": "10841"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10842",
+        "value": "Moderate / Limited",
+        "id": "10842"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10843",
+        "value": "Minor / Localized",
+        "id": "10843"
+      }
+    ]
+  },
+  "description": {
+    "required": false,
+    "schema": {
+      "type": "string",
+      "system": "description"
+    },
+    "name": "Description",
+    "key": "description",
+    "hasDefaultValue": false,
+    "operations": [
+      "set"
+    ]
+  },
+  "customfield_10097": {
+    "required": false,
+    "schema": {
+      "type": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+      "customId": 10097
+    },
+    "name": "Geography",
+    "key": "customfield_10097",
+    "hasDefaultValue": false,
+    "operations": [
+      "set"
+    ],
+    "allowedValues": [
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10460",
+        "value": "India",
+        "id": "10460"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10461",
+        "value": "Asia",
+        "id": "10461"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10462",
+        "value": "Europe",
+        "id": "10462"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10463",
+        "value": "Africa",
+        "id": "10463"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10464",
+        "value": "MEA",
+        "id": "10464"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10465",
+        "value": "North America",
+        "id": "10465"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10466",
+        "value": "LATIN-AMERICA",
+        "id": "10466"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10467",
+        "value": "Latam",
+        "id": "10467"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10469",
+        "value": "North-America",
+        "id": "10469"
+      }
+    ]
+  },
+  "project": {
+    "required": true,
+    "schema": {
+      "type": "project",
+      "system": "project"
+    },
+    "name": "Project",
+    "key": "project",
+    "hasDefaultValue": false,
+    "operations": [
+      "set"
+    ],
+    "allowedValues": [
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/project/10057",
+        "id": "10057",
+        "key": "NDCCLOUD",
+        "name": "NDC-Cloud",
+        "projectTypeKey": "service_desk",
+        "simplified": false,
+        "avatarUrls": {
+          "48x48": "https://onmobile-sd.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10421",
+          "24x24": "https://onmobile-sd.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10421?size=small",
+          "16x16": "https://onmobile-sd.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10421?size=xsmall",
+          "32x32": "https://onmobile-sd.atlassian.net/rest/api/3/universal_avatar/view/type/project/avatar/10421?size=medium"
+        }
+      }
+    ]
+  },
+  "customfield_10099": {
+    "required": false,
+    "schema": {
+      "type": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+      "customId": 10099
+    },
+    "name": "Infra_App",
+    "key": "customfield_10099",
+    "hasDefaultValue": false,
+    "operations": [
+      "set"
+    ],
+    "allowedValues": [
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10530",
+        "value": "Infra",
+        "id": "10530"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10531",
+        "value": "App",
+        "id": "10531"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10532",
+        "value": "UNKNOWN",
+        "id": "10532"
+      }
+    ]
+  },
+  "customfield_10034": {
+    "required": false,
+    "schema": {
+      "type": "array",
+      "items": "user",
+      "custom": "com.atlassian.servicedesk:sd-request-participants",
+      "customId": 10034
+    },
+    "name": "Request participants",
+    "key": "customfield_10034",
+    "autoCompleteUrl": "https://onmobile-sd.atlassian.net/rest/servicedesk/1/servicedesk/sd-user-search/participants?issueKey=null&query=",
+    "hasDefaultValue": false,
+    "operations": [
+      "add",
+      "set",
+      "remove"
+    ]
+  },
+  "customfield_10135": {
+    "required": false,
+    "schema": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+      "customId": 10135
+    },
+    "name": "Sub Classification",
+    "key": "customfield_10135",
+    "hasDefaultValue": false,
+    "operations": [
+      "set"
+    ]
+  },
+  "customfield_10136": {
+    "required": false,
+    "schema": {
+      "type": "array",
+      "items": "user",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multiuserpicker",
+      "customId": 10136
+    },
+    "name": "Approvers (migrated)",
+    "key": "customfield_10136",
+    "autoCompleteUrl": "https://onmobile-sd.atlassian.net/rest/api/1.0/users/picker?fieldName=customfield_10136&showAvatar=true&query=",
+    "hasDefaultValue": false,
+    "operations": [
+      "add",
+      "set",
+      "remove"
+    ]
+  },
+  "attachment": {
+    "required": false,
+    "schema": {
+      "type": "array",
+      "items": "attachment",
+      "system": "attachment"
+    },
+    "name": "Attachment",
+    "key": "attachment",
+    "hasDefaultValue": false,
+    "operations": [
+      "set",
+      "copy"
+    ]
+  },
+  "summary": {
+    "required": true,
+    "schema": {
+      "type": "string",
+      "system": "summary"
+    },
+    "name": "Summary",
+    "key": "summary",
+    "hasDefaultValue": false,
+    "operations": [
+      "set"
+    ]
+  },
+  "customfield_10085": {
+    "required": false,
+    "schema": {
+      "type": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+      "customId": 10085
+    },
+    "name": "Application",
+    "key": "customfield_10085",
+    "hasDefaultValue": false,
+    "operations": [
+      "set"
+    ],
+    "allowedValues": [
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10324",
+        "value": "AAA",
+        "id": "10324"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10325",
+        "value": "AAA Client",
+        "id": "10325"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10326",
+        "value": "AAA Server",
+        "id": "10326"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10327",
+        "value": "Ad RBT DB",
+        "id": "10327"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10328",
+        "value": "Ad RBT Promo",
+        "id": "10328"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10329",
+        "value": "Adwiser",
+        "id": "10329"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10330",
+        "value": "Antivirus",
+        "id": "10330"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10331",
+        "value": "Antivirus Client",
+        "id": "10331"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10332",
+        "value": "Antivirus Server",
+        "id": "10332"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10333",
+        "value": "Atlantis",
+        "id": "10333"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10334",
+        "value": "Atlantis Site Distributor",
+        "id": "10334"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10335",
+        "value": "Backup",
+        "id": "10335"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10336",
+        "value": "BBC",
+        "id": "10336"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10337",
+        "value": "BI",
+        "id": "10337"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10338",
+        "value": "Central-BI",
+        "id": "10338"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10339",
+        "value": "Central-Cricket",
+        "id": "10339"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10340",
+        "value": "Central-Hermes",
+        "id": "10340"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10341",
+        "value": "Central-MNP",
+        "id": "10341"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10342",
+        "value": "Central-Msearch",
+        "id": "10342"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10343",
+        "value": "Central-Nemo",
+        "id": "10343"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10344",
+        "value": "Central-Nova",
+        "id": "10344"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10345",
+        "value": "Central-SongMapper",
+        "id": "10345"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10346",
+        "value": "Central-Spider",
+        "id": "10346"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10347",
+        "value": "Central-StarCopy",
+        "id": "10347"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10348",
+        "value": "Central-UMP",
+        "id": "10348"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10349",
+        "value": "ChallengesArena",
+        "id": "10349"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10350",
+        "value": "Contest Framework",
+        "id": "10350"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10351",
+        "value": "Cricket",
+        "id": "10351"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10352",
+        "value": "Cubot",
+        "id": "10352"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10353",
+        "value": "CVAS",
+        "id": "10353"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10354",
+        "value": "CVASGRIFF",
+        "id": "10354"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10355",
+        "value": "CVASPACKS",
+        "id": "10355"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10356",
+        "value": "CVASPRISM",
+        "id": "10356"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10357",
+        "value": "Daius",
+        "id": "10357"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10358",
+        "value": "DataProducts",
+        "id": "10358"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10359",
+        "value": "Dating",
+        "id": "10359"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10360",
+        "value": "Discover",
+        "id": "10360"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10361",
+        "value": "DoNotDisturb",
+        "id": "10361"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10362",
+        "value": "Football",
+        "id": "10362"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10363",
+        "value": "galera db",
+        "id": "10363"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10364",
+        "value": "galera proxy",
+        "id": "10364"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10365",
+        "value": "GALORE",
+        "id": "10365"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10366",
+        "value": "Greatbuyz",
+        "id": "10366"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10367",
+        "value": "GRIFF",
+        "id": "10367"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10368",
+        "value": "HA Proxy",
+        "id": "10368"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10369",
+        "value": "Hardware Equipment",
+        "id": "10369"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10370",
+        "value": "Hermes",
+        "id": "10370"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10371",
+        "value": "Hyper-V",
+        "id": "10371"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10372",
+        "value": "IBMP",
+        "id": "10372"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10373",
+        "value": "IT System",
+        "id": "10373"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10374",
+        "value": "IVR AF",
+        "id": "10374"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10375",
+        "value": "IVR SIP",
+        "id": "10375"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10376",
+        "value": "IVR Tel",
+        "id": "10376"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10377",
+        "value": "JSM",
+        "id": "10377"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10378",
+        "value": "Kaldi",
+        "id": "10378"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10379",
+        "value": "Kannax",
+        "id": "10379"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10380",
+        "value": "KBC-Galore",
+        "id": "10380"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10381",
+        "value": "Khidki",
+        "id": "10381"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10382",
+        "value": "Kubernetes",
+        "id": "10382"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10383",
+        "value": "Livewire Mobile",
+        "id": "10383"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10384",
+        "value": "MBO",
+        "id": "10384"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10385",
+        "value": "MCA",
+        "id": "10385"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10386",
+        "value": "MessagingGateway",
+        "id": "10386"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10387",
+        "value": "mgov",
+        "id": "10387"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10388",
+        "value": "Mradio",
+        "id": "10388"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10389",
+        "value": "MSearch",
+        "id": "10389"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10390",
+        "value": "Music",
+        "id": "10390"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10391",
+        "value": "MuzikGenie",
+        "id": "10391"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10392",
+        "value": "MWEB",
+        "id": "10392"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10393",
+        "value": "NAB",
+        "id": "10393"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10394",
+        "value": "Nemo",
+        "id": "10394"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10395",
+        "value": "Network",
+        "id": "10395"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10396",
+        "value": "Network Services",
+        "id": "10396"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10397",
+        "value": "NewDeployment",
+        "id": "10397"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10398",
+        "value": "Nms Cape",
+        "id": "10398"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10399",
+        "value": "Nms Infra",
+        "id": "10399"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10400",
+        "value": "Noc Tools",
+        "id": "10400"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10401",
+        "value": "NOVA",
+        "id": "10401"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10402",
+        "value": "OBD",
+        "id": "10402"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10403",
+        "value": "OBD DB",
+        "id": "10403"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10404",
+        "value": "OBD Tel",
+        "id": "10404"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10405",
+        "value": "onmo",
+        "id": "10405"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10406",
+        "value": "Onmopay",
+        "id": "10406"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10407",
+        "value": "onmostore",
+        "id": "10407"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10408",
+        "value": "onmostreaming",
+        "id": "10408"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10409",
+        "value": "OnSpire",
+        "id": "10409"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10410",
+        "value": "Ozone2",
+        "id": "10410"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10411",
+        "value": "Ozone3",
+        "id": "10411"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10412",
+        "value": "PRISM",
+        "id": "10412"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10413",
+        "value": "Promotool",
+        "id": "10413"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10414",
+        "value": "Proxy",
+        "id": "10414"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10415",
+        "value": "Rancher",
+        "id": "10415"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10416",
+        "value": "RBT",
+        "id": "10416"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10417",
+        "value": "RBT DB",
+        "id": "10417"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10418",
+        "value": "RBT Player DB",
+        "id": "10418"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10419",
+        "value": "RBT TP",
+        "id": "10419"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10420",
+        "value": "RCVAS",
+        "id": "10420"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10421",
+        "value": "RE",
+        "id": "10421"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10422",
+        "value": "Reporting",
+        "id": "10422"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10423",
+        "value": "Results",
+        "id": "10423"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10424",
+        "value": "RHVH",
+        "id": "10424"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10425",
+        "value": "RHVM",
+        "id": "10425"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10426",
+        "value": "Ringtones",
+        "id": "10426"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10427",
+        "value": "SM",
+        "id": "10427"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10428",
+        "value": "SMSC",
+        "id": "10428"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10429",
+        "value": "SMSConnect",
+        "id": "10429"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10430",
+        "value": "Spider",
+        "id": "10430"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10431",
+        "value": "Sports",
+        "id": "10431"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10432",
+        "value": "Staging",
+        "id": "10432"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10433",
+        "value": "Telisma",
+        "id": "10433"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10434",
+        "value": "Telispeech",
+        "id": "10434"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10435",
+        "value": "UMP",
+        "id": "10435"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10436",
+        "value": "UNKNOWN",
+        "id": "10436"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10437",
+        "value": "USSD",
+        "id": "10437"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10438",
+        "value": "VoiceApps",
+        "id": "10438"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10439",
+        "value": "Voltron",
+        "id": "10439"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10440",
+        "value": "VotingApps",
+        "id": "10440"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10441",
+        "value": "Wap",
+        "id": "10441"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10442",
+        "value": "Wolken",
+        "id": "10442"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10443",
+        "value": "Xen",
+        "id": "10443"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10444",
+        "value": "Xen VM",
+        "id": "10444"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10445",
+        "value": "Zabbix",
+        "id": "10445"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10446",
+        "value": "Gamize",
+        "id": "10446"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10447",
+        "value": "CA Partner Games",
+        "id": "10447"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10448",
+        "value": "GitLab",
+        "id": "10448"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10449",
+        "value": "ELK",
+        "id": "10449"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10918",
+        "value": "EON-Games",
+        "id": "10918"
+      }
+    ]
+  },
+  "customfield_10086": {
+    "required": false,
+    "schema": {
+      "type": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+      "customId": 10086
+    },
+    "name": "Unit",
+    "key": "customfield_10086",
+    "hasDefaultValue": false,
+    "operations": [
+      "set"
+    ],
+    "allowedValues": [
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10473",
+        "value": "Airtel-BurkinaFaso",
+        "id": "10473"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10474",
+        "value": "Airtel-India-North",
+        "id": "10474"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10475",
+        "value": "Airtel-India-South",
+        "id": "10475"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10476",
+        "value": "Airtel-Malawi",
+        "id": "10476"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10477",
+        "value": "Airtel-Uganda",
+        "id": "10477"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10478",
+        "value": "America-Movil",
+        "id": "10478"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10479",
+        "value": "Banglalink-BD-RBT",
+        "id": "10479"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10480",
+        "value": "BSNL-India",
+        "id": "10480"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10481",
+        "value": "Daius-Spain",
+        "id": "10481"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10482",
+        "value": "Dialog-SL",
+        "id": "10482"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10483",
+        "value": "Dialog-SL-RBT",
+        "id": "10483"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10484",
+        "value": "Digicel-Haiti",
+        "id": "10484"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10485",
+        "value": "Digicel-Jamaica",
+        "id": "10485"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10486",
+        "value": "Du-Dubai",
+        "id": "10486"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10487",
+        "value": "Glo-Nigeria",
+        "id": "10487"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10488",
+        "value": "GrameenPhone-BD",
+        "id": "10488"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10489",
+        "value": "Idea-India",
+        "id": "10489"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10490",
+        "value": "Lebara-SA",
+        "id": "10490"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10491",
+        "value": "MTN-Afghanistan",
+        "id": "10491"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10492",
+        "value": "MTN-Liberia",
+        "id": "10492"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10493",
+        "value": "NDC-Cloud",
+        "id": "10493"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10494",
+        "value": "NDC-OnPrem",
+        "id": "10494"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10495",
+        "value": "New-Deployment",
+        "id": "10495"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10496",
+        "value": "Omantel",
+        "id": "10496"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10497",
+        "value": "Orange-Spain",
+        "id": "10497"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10498",
+        "value": "ROBI-BD",
+        "id": "10498"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10499",
+        "value": "ROBI-BD-RBT",
+        "id": "10499"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10500",
+        "value": "STC-Bahrain",
+        "id": "10500"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10501",
+        "value": "STG01",
+        "id": "10501"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10502",
+        "value": "Telefonica-Costarica",
+        "id": "10502"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10503",
+        "value": "Telefonica-Spain-CVAS",
+        "id": "10503"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10504",
+        "value": "Telefonica-Spain-RBT",
+        "id": "10504"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10505",
+        "value": "UMobile-Malaysia",
+        "id": "10505"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10506",
+        "value": "Unitel-Angola-RBT",
+        "id": "10506"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10507",
+        "value": "Vodacom-DRC",
+        "id": "10507"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10508",
+        "value": "Vodacom-Mozambique",
+        "id": "10508"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10509",
+        "value": "Vodacom-Tanzania",
+        "id": "10509"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10510",
+        "value": "Vodacomm-SA",
+        "id": "10510"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10511",
+        "value": "VodacomSA-RBT",
+        "id": "10511"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10512",
+        "value": "Vodafone-Egypt",
+        "id": "10512"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10513",
+        "value": "Vodafone-Greece",
+        "id": "10513"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10516",
+        "value": "Vodafone-Qatar",
+        "id": "10516"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10517",
+        "value": "Vodafone-Spain",
+        "id": "10517"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10518",
+        "value": "Zain-Bahrain",
+        "id": "10518"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10519",
+        "value": "Airtel-SouthWest",
+        "id": "10519"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10520",
+        "value": "Vodafone-India",
+        "id": "10520"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10521",
+        "value": "CLARO",
+        "id": "10521"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10522",
+        "value": "TELCEL",
+        "id": "10522"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10523",
+        "value": "Safaricom-Ethiopia",
+        "id": "10523"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10917",
+        "value": "EON",
+        "id": "10917"
+      }
+    ]
+  },
+  "reporter": {
+    "required": true,
+    "schema": {
+      "type": "user",
+      "system": "reporter"
+    },
+    "name": "Reporter",
+    "key": "reporter",
+    "autoCompleteUrl": "https://onmobile-sd.atlassian.net/rest/api/3/user/recommend?context=Reporter&issueKey=",
+    "hasDefaultValue": true,
+    "operations": [
+      "set"
+    ]
+  },
+  "customfield_10121": {
+    "required": false,
+    "schema": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+      "customId": 10121
+    },
+    "name": "Classification",
+    "key": "customfield_10121",
+    "hasDefaultValue": false,
+    "operations": [
+      "set"
+    ]
+  },
+  "priority": {
+    "required": false,
+    "schema": {
+      "type": "priority",
+      "system": "priority"
+    },
+    "name": "Priority",
+    "key": "priority",
+    "hasDefaultValue": true,
+    "operations": [
+      "set"
+    ],
+    "allowedValues": [
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/priority/10000",
+        "iconUrl": "https://onmobile-sd.atlassian.net/images/icons/priorities/high.svg",
+        "name": "High (migrated)",
+        "id": "10000"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/priority/10001",
+        "iconUrl": "https://onmobile-sd.atlassian.net/images/icons/priorities/medium.svg",
+        "name": "Medium (migrated)",
+        "id": "10001"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/priority/10002",
+        "iconUrl": "https://onmobile-sd.atlassian.net/images/icons/priorities/low.svg",
+        "name": "Low (migrated)",
+        "id": "10002"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/priority/10003",
+        "iconUrl": "https://onmobile-sd.atlassian.net/images/icons/priorities/blocker.svg",
+        "name": "Blocker",
+        "id": "10003"
+      }
+    ],
+    "defaultValue": {
+      "self": "https://onmobile-sd.atlassian.net/rest/api/3/priority/10002",
+      "iconUrl": "https://onmobile-sd.atlassian.net/images/icons/priorities/low.svg",
+      "name": "Low (migrated)",
+      "id": "10002"
+    }
+  },
+  "customfield_10122": {
+    "required": false,
+    "schema": {
+      "type": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+      "customId": 10122
+    },
+    "name": "Urgency (migrated)",
+    "key": "customfield_10122",
+    "hasDefaultValue": false,
+    "operations": [
+      "set"
+    ],
+    "allowedValues": [
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10208",
+        "value": "Critical",
+        "id": "10208"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10209",
+        "value": "High",
+        "id": "10209"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10210",
+        "value": "Medium",
+        "id": "10210"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10211",
+        "value": "Low",
+        "id": "10211"
+      }
+    ]
+  },
+  "customfield_10123": {
+    "required": false,
+    "schema": {
+      "type": "option",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+      "customId": 10123
+    },
+    "name": "Investigation reason",
+    "key": "customfield_10123",
+    "hasDefaultValue": false,
+    "operations": [
+      "set"
+    ],
+    "allowedValues": [
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10266",
+        "value": "High impact incident",
+        "id": "10266"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10267",
+        "value": "Recurring incident",
+        "id": "10267"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10268",
+        "value": "Non-routine incident",
+        "id": "10268"
+      },
+      {
+        "self": "https://onmobile-sd.atlassian.net/rest/api/3/customFieldOption/10269",
+        "value": "Other",
+        "id": "10269"
+      }
+    ]
+  },
+  "customfield_10002": {
+    "required": false,
+    "schema": {
+      "type": "array",
+      "items": "sd-customerorganization",
+      "custom": "com.atlassian.servicedesk:sd-customer-organizations",
+      "customId": 10002
+    },
+    "name": "Organizations",
+    "key": "customfield_10002",
+    "autoCompleteUrl": "https://onmobile-sd.atlassian.net/rest/servicedesk/1/organisations/project/10057/search?query=",
+    "hasDefaultValue": false,
+    "operations": [
+      "add",
+      "set",
+      "remove"
+    ]
+  },
+  "customfield_10101": {
+    "required": false,
+    "schema": {
+      "type": "string",
+      "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textarea",
+      "customId": 10101
+    },
+    "name": "External comment",
+    "key": "customfield_10101",
+    "hasDefaultValue": false,
+    "operations": [
+      "set"
+    ]
+  },
+  "issuelinks": {
+    "required": false,
+    "schema": {
+      "type": "array",
+      "items": "issuelinks",
+      "system": "issuelinks"
+    },
+    "name": "Linked Issues",
+    "key": "issuelinks",
+    "autoCompleteUrl": "https://onmobile-sd.atlassian.net/rest/api/3/issue/picker?currentProjectId=&showSubTaskParent=true&showSubTasks=true&currentIssueKey=null&query=",
+    "hasDefaultValue": false,
+    "operations": [
+      "add",
+      "copy"
+    ]
+  },
+  "assignee": {
+    "required": false,
+    "schema": {
+      "type": "user",
+      "system": "assignee"
+    },
+    "name": "Assignee",
+    "key": "assignee",
+    "autoCompleteUrl": "https://onmobile-sd.atlassian.net/rest/api/3/user/assignable/search?project=NDCCLOUD&query=",
+    "hasDefaultValue": false,
+    "operations": [
+      "set"
+    ]
+  }
+}

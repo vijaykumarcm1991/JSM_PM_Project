@@ -72,12 +72,29 @@ export async function validateRowsAndDuplicates(
     });
   }
 
-  // 2. Duplicate check against Jira Cloud
+  // 2. Duplicate check against Jira Cloud grouped by project
   const duplicateMatches = new Map<string, DuplicateIssueMatch>();
-  if (checkDuplicates && summariesToRows.size > 0) {
-    const summariesList = Array.from(summariesToRows.keys());
-    const matches = await searchSummaries(config.projectKey, summariesList);
-    matches.forEach((v, k) => duplicateMatches.set(k, v));
+  if (checkDuplicates) {
+    const projToSummaries = new Map<string, string[]>();
+    for (const rIndex of sortedRowIndices) {
+      const rowData = rows[rIndex];
+      const pKey = String(rowData['Project'] || rowData['project'] || config.projectKey).trim();
+      const s = rowPayloads.get(rIndex)?.summary;
+      if (pKey && s) {
+        const list = projToSummaries.get(pKey) || [];
+        list.push(s);
+        projToSummaries.set(pKey, list);
+      }
+    }
+
+    for (const [pKey, summariesList] of projToSummaries.entries()) {
+      try {
+        const matches = await searchSummaries(pKey, summariesList);
+        matches.forEach((v, k) => duplicateMatches.set(`${pKey.toLowerCase()}:${k}`, v));
+      } catch (err) {
+        console.warn('Duplicate search failed for project', pKey, err);
+      }
+    }
   }
 
   let duplicateCount = 0;
@@ -85,8 +102,10 @@ export async function validateRowsAndDuplicates(
   // 3. Assemble problem list
   for (const rIndex of sortedRowIndices) {
     const info = rowPayloads.get(rIndex)!;
+    const rowData = rows[rIndex];
+    const pKey = String(rowData['Project'] || rowData['project'] || config.projectKey).trim().toLowerCase();
     const lowerSummary = info.summary.toLowerCase();
-    const dupMatch = duplicateMatches.get(lowerSummary);
+    const dupMatch = duplicateMatches.get(`${pKey}:${lowerSummary}`);
 
     if (dupMatch) {
       duplicateCount++;
